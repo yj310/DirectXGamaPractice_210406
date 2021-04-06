@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="소스파일">
+      <UniqueIdentifier>{5a0cf8d0-c8df-4785-83af-12f91794be3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더파일">
+      <UniqueIdentifier>{748b6a61-19d0-428e-ad39-0efa341220a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더파일\manager">
+      <UniqueIdentifier>{6648fa1c-b74d-41ad-a631-62bae02dc5f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더파일\page">
+      <UniqueIdentifier>{424a5444-022f-4a7e-9ecb-b6c2fe3a0108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스파일\page">
+      <UniqueIdentifier>{8e705e23-392c-41dd-9b71-bc6c22fa4def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스파일\manager">
+      <UniqueIdentifier>{76785277-b81b-4ee8-a7b2-7baa1e7a05aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EmptyProject.cpp">
+      <Filter>소스파일</Filter>
+    </ClCompile>
+    <ClCompile Include="title_page.cpp">
+      <Filter>소스파일\page</Filter>
+    </ClCompile>
+    <ClCompile Include="page_manager.cpp">
+      <Filter>소스파일\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="first_game_page.cpp">
+      <Filter>소스파일\page</Filter>
+    </ClCompile>
+    <ClCompile Include="intro_page.cpp">
+      <Filter>소스파일\page</Filter>
+    </ClCompile>
+    <ClCompile Include="manual_page.cpp">
+      <Filter>소스파일\page</Filter>
+    </ClCompile>
+    <ClCompile Include="ranking_page.cpp">
+      <Filter>소스파일\page</Filter>
+    </ClCompile>
+    <ClCompile Include="second_game_page.cpp">
+      <Filter>소스파일\page</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="EmptyProject.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="first_game_page.h">
+      <Filter>헤더파일\page</Filter>
+    </ClInclude>
+    <ClInclude Include="intro_page.h">
+      <Filter>헤더파일\page</Filter>
+    </ClInclude>
+    <ClInclude Include="manual_page.h">
+      <Filter>헤더파일\page</Filter>
+    </ClInclude>
+    <ClInclude Include="page.h">
+      <Filter>헤더파일\page</Filter>
+    </ClInclude>
+    <ClInclude Include="ranking_page.h">
+      <Filter>헤더파일\page</Filter>
+    </ClInclude>
+    <ClInclude Include="second_game_page.h">
+      <Filter>헤더파일\page</Filter>
+    </ClInclude>
+    <ClInclude Include="title_page.h">
+      <Filter>헤더파일\page</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>헤더파일</Filter>
+    </ClInclude>
+    <ClInclude Include="page_manager.h">
+      <Filter>헤더파일\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>헤더파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
