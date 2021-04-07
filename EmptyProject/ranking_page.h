@@ -16,6 +16,7 @@ public:
 	ID3DXFont* font;
 
 	vector<char> cname;
+	char nname[128];
 
 	int keyCount;
 

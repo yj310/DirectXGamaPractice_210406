@@ -62,7 +62,7 @@ void RankingPage::Update()
 	{
 		save();
 	}
-	if ((GetAsyncKeyState(VK_SPACE) & 0x8000) != 0)
+	if ((GetAsyncKeyState(VK_SHIFT) & 0x8000) != 0)
 	{
 		load();
 	}
@@ -94,8 +94,8 @@ void RankingPage::load()
 		{
 			char cname[128];
 			int iscore;
-			fscanf_s(fp, "%s %d", name, 128, &iscore);
-			strcpy_s<128>(name, cname);
+			fscanf_s(fp, "%s %d", cname, 128, &iscore);
+			strcpy_s<128>(nname, cname);
 			score = iscore;
 		}
 
@@ -132,6 +132,11 @@ void RankingPage::Render()
 	string sname(cname.begin(), cname.end());
 	strcpy_s(name, sname.c_str());
 	w = A2W(name);
+	font->DrawText(NULL, w, -1, &rc, 0, D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+
+
+	rc = { 100, 400, 500, 500 };
+	w = A2W(nname);
 	font->DrawText(NULL, w, -1, &rc, 0, D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
 
 
