@@ -16,6 +16,9 @@
 #define MAP_VISITED 2
 #define MAP_VISITING 3
 #define MAP_TEMP 4
+#define MAP_ENEMYS 5
+#define MAP_ENEMY_VISITING 6
+#define MAP_ENEMY_EDGE 7
 
 
 #define FULL_LAND (FLOOR_HEIGHT - 2) * (FLOOR_WIDTH - 2)
@@ -24,4 +27,7 @@
 
 
 extern PageManager pageManager;
+extern int score;
+extern char name[128];
+
 

@@ -6,7 +6,9 @@ using namespace std;
 FirstGamePage::FirstGamePage()
 {
 	player = new Player();
+	superEnemy = new SuperEnemy();
 	myLand = 0;
+	score = 0;
 
 	backgroundTex = new LPDIRECT3DTEXTURE9();
 	D3DXCreateTextureFromFileExA(
@@ -110,6 +112,7 @@ FirstGamePage::~FirstGamePage()
 	spr->Release();
 
 	delete player;
+	delete superEnemy;
 }
 
 void FirstGamePage::MapUpdate()
@@ -373,8 +376,14 @@ void FirstGamePage::KeyInput()
 void FirstGamePage::Update()
 {
 	player->Update();
+	superEnemy->Update();
 	KeyInput();
 	MapUpdate();
+	score = myLand;
+	if (myLand > FLOOR_PIXEL / 100 * 80)
+	{
+		pageManager.CreateRankingPage();
+	}
 }
 #include <atlconv.h>
 
@@ -394,11 +403,12 @@ void FirstGamePage::Render()
 
 
 	player->Render();
+	superEnemy->Render();
 
 	char text[] = "가나다라마";
-	float score = 100.512025845;
+	//float score = 100.512025845;
 	char cscore[256];
-	sprintf(cscore, "%.1f", score);
+	sprintf(cscore, "%d", score);
 
 	USES_CONVERSION;
 

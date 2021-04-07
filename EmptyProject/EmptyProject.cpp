@@ -6,7 +6,9 @@
 
 
 
-PageManager pageManager;
+PageManager pageManager; 
+int score;
+char name[128];
 
 
 
@@ -36,7 +38,7 @@ HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURF
                                      void* pUserContext )
 {
     pageManager.CreateTitlePage();
-
+    //pageManager.CreateRankingPage();
     return S_OK;
 }
 

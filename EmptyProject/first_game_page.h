@@ -2,6 +2,7 @@
 #include "page.h"
 #include "global.h"
 #include "player.h"
+#include "super_enemy.h"
 
 class FirstGamePage : public Page
 {
@@ -17,6 +18,7 @@ public:
 	ID3DXFont* font;
 
 	Player* player;
+	SuperEnemy* superEnemy;
 
 	bool isSpace;
 	bool isVisiting;

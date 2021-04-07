@@ -391,6 +391,7 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="ranking_page.cpp" />
     <ClCompile Include="second_game_page.cpp" />
+    <ClCompile Include="super_enemy.cpp" />
     <ClCompile Include="title_page.cpp" />
     <ClInclude Include="first_game_page.h" />
     <ClInclude Include="global.h" />
@@ -399,6 +400,7 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="ranking_page.h" />
     <ClInclude Include="second_game_page.h" />
+    <ClInclude Include="super_enemy.h" />
     <ClInclude Include="title_page.h" />
     <None Include="..\..\DXUT\Optional\directx.ico" />
     <ClInclude Include="DXUT\Core\DXUT.h" />

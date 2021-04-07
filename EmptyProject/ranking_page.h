@@ -1,5 +1,7 @@
 #pragma once
 #include "page.h"
+#include <vector>
+using namespace std;
 
 class RankingPage : public Page
 {
@@ -11,6 +13,14 @@ public:
 	LPDIRECT3DTEXTURE9* backgroundTex;
 	LPD3DXSPRITE spr;
 
+	ID3DXFont* font;
+
+	vector<char> cname;
+
+	int keyCount;
+
+	void save();
+	void load();
 
 	void Update() override;
 	void Render() override;
